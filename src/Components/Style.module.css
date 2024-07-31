@@ -1,0 +1,12 @@
+.btn:hover {
+  background-color: rgba(13, 44, 59, 1);
+}
+.btn {
+  margin: auto 0;
+  background-color: rgb(35, 61, 74);
+}
+.input {
+  width: 445px;
+  height: 40px;
+  border: 5px solid rgb(255, 255, 255);
+}

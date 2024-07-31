@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Nunito;
+  src: url(./libs/Fonts/Nunito-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: Nunito;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
