@@ -15,6 +15,7 @@ const Button = ({
   hoverBackgroundColor,
   hoverColor,
   onClick,
+  justifyContent,
 }) => {
   const buttonStyle = {
     cursor: "pointer",
@@ -25,7 +26,7 @@ const Button = ({
     height: height ? `${height}px` : "auto",
     border: border ? `${border}` : "none",
     borderRadius: radius ? `${radius}` : "unset",
-
+    justifyContent: justifyContent ? `${justifyContent}` : "space-between",
     transition: "background-color 0.3s, color 0.3s",
   };
 
@@ -44,14 +45,6 @@ const Button = ({
       : "rgb(35, 61, 74)";
     e.target.style.color = variant === "primary" ? "white" : "black";
   };
-
-  // const iconStyle1 = {
-  //   marginRight: "6px",
-  // };
-  // const iconStyle2 = {
-  //   marginLeft: "20px",
-  // };
-
   return (
     <button
       className={s.btn}
