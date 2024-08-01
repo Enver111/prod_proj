@@ -1,0 +1,18 @@
+.categoryMenu {
+  position: absolute;
+  /* временно */
+  width: 1200px;
+  height: auto;
+  left: 80px;
+  top: 90px;
+  box-sizing: border-box;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  padding: 30px 25px;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
