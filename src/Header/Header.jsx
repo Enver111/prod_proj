@@ -1,10 +1,20 @@
+import { useState } from "react";
 import Button from "../Components/Button";
 import Logo from "../libs/icons/logo.svg";
 import Hamburger from "../libs/icons/hamburger.svg";
+import Close from "../libs/icons/close.svg";
 
 import s from "./Header.module.css";
+import CategoryMenu from "../CategoryMenu/CategoryMenu";
 
 const Header = () => {
+  const [showCategories, setShowCategories] = useState(false);
+
+  const handleCategoriesClick = () => {
+    console.log("Enver");
+    setShowCategories(!showCategories);
+  };
+
   return (
     <header className={s.header}>
       <div className={s.left}>
@@ -19,8 +29,11 @@ const Header = () => {
           width={150}
           height={40}
           radius="10px"
-          icon={Hamburger}
+          icon1={showCategories ? Close : Hamburger}
+          onClick={handleCategoriesClick}
+          hoverBackgroundColor="rgba(13, 44, 59, 1)"
         />
+
         <div className={s.inputBlock}>
           <input
             className={s.input}
@@ -34,6 +47,7 @@ const Header = () => {
             width={77}
             height={40}
             radius="0 10px 10px 0"
+            hoverBackgroundColor="rgba(13, 44, 59, 1)"
           />
         </div>
       </div>
@@ -45,6 +59,7 @@ const Header = () => {
           width={200}
           height={40}
           radius="10px"
+          hoverBackgroundColor="rgba(13, 44, 59, 1)"
         />
         <Button
           size="16"
@@ -53,8 +68,10 @@ const Header = () => {
           width={170}
           height={40}
           radius="10px"
+          hoverBackgroundColor="rgba(13, 44, 59, 1)"
         />
       </div>
+      {showCategories && <CategoryMenu />}
     </header>
   );
 };
