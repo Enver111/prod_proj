@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: auto 0;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+.logo img {
+  width: 50px;
+}
+.logo p {
+  color: rgb(35, 61, 74);
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
