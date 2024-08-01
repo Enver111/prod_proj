@@ -7,9 +7,15 @@ import Close from "../libs/icons/close.svg";
 import s from "./Header.module.css";
 import CategoryMenu from "../CategoryMenu/CategoryMenu";
 import Logo from "../Components/Logo/Logo";
+import SignInPage from "../AutorizationForm/SignInPage/SignInPage";
 
 const Header = () => {
   const [showCategories, setShowCategories] = useState(false);
+  const [signIn, setSignIn] = useState(false);
+
+  const handleSignInClick = () => {
+    setSignIn(!signIn);
+  };
 
   const handleCategoriesClick = () => {
     console.log("Enver");
@@ -67,9 +73,11 @@ const Header = () => {
           height={40}
           radius="10px"
           hoverBackgroundColor="rgba(13, 44, 59, 1)"
+          onClick={handleSignInClick}
         />
       </div>
       {showCategories && <CategoryMenu />}
+      {signIn && <SignInPage />}
     </header>
   );
 };

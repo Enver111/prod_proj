@@ -1,0 +1,50 @@
+.signIn {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.336);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 25px 50px;
+  width: 400px;
+  box-sizing: border-box;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container h1 {
+  text-align: center;
+  margin: 0;
+}
+.logo {
+  width: 60px;
+  margin: auto;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer {
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer span {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  padding: 0 10px;
+  text-align: center;
+}
+.line {
+  border: 1px solid rgb(0, 0, 0);
+}
