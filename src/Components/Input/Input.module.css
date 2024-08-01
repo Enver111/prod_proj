@@ -1,0 +1,22 @@
+.inputWrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.input {
+  box-sizing: border-box;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 10px;
+  background: rgb(246, 246, 246);
+  position: relative;
+  padding-left: 15px;
+}
+
+.toggleButton {
+  background-color: unset;
+  border: unset;
+  position: absolute;
+  padding: 0;
+  margin: 0 15px;
+  cursor: pointer;
+}
