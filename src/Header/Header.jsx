@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Button from "../Components/Button";
-import Logo from "../libs/icons/logo.svg";
+
 import Hamburger from "../libs/icons/hamburger.svg";
 import Close from "../libs/icons/close.svg";
 
 import s from "./Header.module.css";
 import CategoryMenu from "../CategoryMenu/CategoryMenu";
+import Logo from "../Components/Logo/Logo";
 
 const Header = () => {
   const [showCategories, setShowCategories] = useState(false);
@@ -18,10 +19,7 @@ const Header = () => {
   return (
     <header className={s.header}>
       <div className={s.left}>
-        <div className={s.logo}>
-          <img src={Logo} alt="logo" />
-          <p>Glamly</p>
-        </div>
+        <Logo />
         <Button
           size="16"
           variant="primary"
